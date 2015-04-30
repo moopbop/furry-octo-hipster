@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour {
 	public AudioSource collect;
 	public AudioSource die;
 	public AudioSource win;
+	public ParticleSystem[] jet_particles;	// Array of jetpack particles
 	#endregion
 
 	#region private variables
@@ -78,6 +79,15 @@ public class PlayerController : MonoBehaviour {
 		// Y depth insurance
 		if (rb.transform.position.y <= killY) {
 			Die ();
+		}
+
+		// Particles
+		if (Input.GetKey (KeyCode.Space)) {
+			for (int i = 0; i < jet_particles.Length; i++) {
+				if (jet_particles[i].isStopped) {
+					jet_particles[i].Play ();
+				}
+			}
 		}
 	}
 

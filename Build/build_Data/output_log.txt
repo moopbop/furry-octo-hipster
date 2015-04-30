@@ -1,0 +1,32 @@
+Initialize engine version: 5.0.0f4 (5b98b70ebeb9)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: Intel(R) HD Graphics (ID=0x152)
+    Vendor:   Intel
+    VRAM:     128 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: F:\Unity\Jetpack II\Build\build_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading F:\Unity\Jetpack II\Build\build_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: F:\Unity\Jetpack II\Build\build_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading F:\Unity\Jetpack II\Build\build_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: F:\Unity\Jetpack II\Build\build_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading F:\Unity\Jetpack II\Build\build_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.134 seconds
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+XInput1_3.dll not found.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: F:\Unity\Jetpack II\Build\build_Data\Managed\System.Core.dll (this message is harmless)
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 1420 -> priority: 1 
+Platform assembly: F:\Unity\Jetpack II\Build\build_Data\Managed\System.dll (this message is harmless)
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 4.689011 ms
+System memory in use before: 46.0 MB.
+System memory in use after: 45.9 MB.
+
+Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 190.
+Total: 0.378492 ms (FindLiveObjects: 0.019593 ms CreateObjectMapping: 0.018660 ms MarkObjects: 0.196554 ms  DeleteObjects: 0.142439 ms)
+
