@@ -1,9 +1,12 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Menu.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Score.cs">
     <Files>
-      <File FileName="Assets\Scripts\Menu.cs" Line="11" Column="23" />
-      <File FileName="Assets\Scripts\Checkpoint.cs" Line="13" Column="35" />
+      <File FileName="Assets\Scripts\Clock.cs" Line="29" Column="18" />
+      <File FileName="Assets\Scripts\PlayerController.cs" Line="58" Column="81" />
+      <File FileName="Assets\Scripts\CheckpointController.cs" Line="19" Column="23" />
+      <File FileName="Assets\Scripts\WinScreenController.cs" Line="13" Column="3" />
+      <File FileName="Assets\Scripts\Score.cs" Line="10" Column="33" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

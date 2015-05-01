@@ -23,6 +23,7 @@ public class PlayerController : MonoBehaviour {
 	public AudioSource die;
 	public AudioSource win;
 	public ParticleSystem[] jet_particles;	// Array of jetpack particles
+	public GameObject timer;
 	#endregion
 
 	#region private variables
@@ -54,6 +55,7 @@ public class PlayerController : MonoBehaviour {
 		// Check for win and song over
 		if (endGame && !win.isPlaying) {
 			// Load end scene (index 1 as-of 4/26/2015)
+			PlayerPrefs.SetInt ("Player Time", timer.GetComponent<Clock>().GetSeconds ());
 			Application.LoadLevel ("AlphaWin");
 		}
 		
@@ -169,6 +171,9 @@ public class PlayerController : MonoBehaviour {
 			checkControl.checkpoints[i].SetActive (true);
 			checkControl.destroyed[i] = false;
 		}
+
+		// Reset time
+		timer.GetComponent<Clock> ().Reset ();
 	}
 
 	// Draw important things to the screen
