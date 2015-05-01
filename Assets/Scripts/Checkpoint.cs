@@ -10,7 +10,8 @@ public class Checkpoint : MonoBehaviour {
 	}
 
 	void Update () {
-		transform.Rotate (Vector3.up, 5f * Time.deltaTime);
-		transform.Rotate (Vector3.right, 2f * Time.deltaTime);
+		float time = Time.deltaTime * 35;
+		transform.Rotate (Vector3.up, 5 + time);
+		transform.Rotate (Vector3.right, 2 + time);
 	}
 }
