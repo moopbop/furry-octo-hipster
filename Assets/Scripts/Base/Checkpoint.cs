@@ -10,8 +10,11 @@ public class Checkpoint : MonoBehaviour {
 	}
 
 	void Update () {
-		float time = Time.deltaTime * 35;
-		transform.Rotate (Vector3.up, 5 + time);
-		transform.Rotate (Vector3.right, 2 + time);
+
+		// Pesudo-random rotation speeds for variation
+		float up = Time.deltaTime * Random.Range (25f, 100f);
+		float right = Time.deltaTime * Random.Range (25f, 100f);
+		transform.Rotate (Vector3.up, 5 + up);
+		transform.Rotate (Vector3.right, 2 + right);
 	}
 }

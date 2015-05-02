@@ -1,8 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Base\Checkpoint.cs">
     <Files>
-      <File FileName="Assets\Scripts\Base\Checkpoint.cs" Line="6" Column="1" />
+      <File FileName="Assets\Scripts\Base\Checkpoint.cs" Line="16" Column="58" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
