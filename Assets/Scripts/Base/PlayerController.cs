@@ -24,6 +24,7 @@ public class PlayerController : MonoBehaviour {
 	public AudioSource win;
 	public ParticleSystem[] jet_particles;	// Array of jetpack particles
 	public GameObject timer;
+	public float msSensitivity;				// Mouse sensitivity
 	#endregion
 
 	#region private variables
@@ -35,16 +36,20 @@ public class PlayerController : MonoBehaviour {
 	private CheckpointController checkControl;			// CheckpointController.cs script
 	private int checkCount;								// Checkpoint counter
 	private bool endGame;
+	private float mouseX;
 	#endregion
-	
-	/* Methods & functions */
+
+	#region system voids
 	void Start() {
+
+		// Initialization
 		rb = GetComponent<Rigidbody> ();
 		startPosition = rb.position;
 		jetCount = 0;
 		checkControl = checkpointManager.GetComponent<CheckpointController> ();
 		checkCount = 0;
 		endGame = false;
+		mouseX = 0f;
 
 		// Hide cursor
 		Cursor.visible = false;
@@ -70,12 +75,7 @@ public class PlayerController : MonoBehaviour {
 		}
 
 		// Mouse input
-		if (Input.GetMouseButton (0)) {	// Left mouse
-			rb.transform.Rotate (Vector3.down, turnSpeed * Time.deltaTime);	// Rotate left
-		}
-		if (Input.GetMouseButton(1)) {	// Right mouse
-			rb.transform.Rotate (Vector3.up, turnSpeed * Time.deltaTime);	// Rotate right
-		}
+		mouseX = Input.GetAxis ("Mouse X");
 
 		// Y depth insurance
 		if (rb.transform.position.y <= killY) {
@@ -94,6 +94,10 @@ public class PlayerController : MonoBehaviour {
 
 	/* Every frame */
 	void FixedUpdate() {
+
+		// Rotate
+		rb.transform.Rotate (Vector3.down, (-mouseX * msSensitivity * Time.deltaTime));
+
 		Vector3 force = new Vector3 (input.x * speed, input.y * boostSpeed, input.z * speed);	// Separate x/z and y speeds
 
 		if (force.y >= 1 && jetCount < jetLimit) {
@@ -158,6 +162,14 @@ public class PlayerController : MonoBehaviour {
 		}
 	}
 
+	// Draw important things to the screen
+	void OnGUI() {
+		GUI.Label (new Rect(10, 10, 150, 150), "Glitch Cores: " + checkCount.ToString() + " / " + checkControl.checkpoints.Length.ToString());
+		GUI.Label (new Rect(10, Screen.height - 30, 150, 150), "Heat: " + jetCount.ToString () + " / " + jetLimit.ToString ());
+	}
+	#endregion
+
+	#region custom methods and functions
 	/* Reset pertinent values */
 	void Die() {
 
@@ -178,10 +190,5 @@ public class PlayerController : MonoBehaviour {
 		// Reset time
 		timer.GetComponent<Clock> ().Reset ();
 	}
-
-	// Draw important things to the screen
-	void OnGUI() {
-		GUI.Label (new Rect(10, 10, 150, 150), "Glitch Cores: " + checkCount.ToString() + " / " + checkControl.checkpoints.Length.ToString());
-		GUI.Label (new Rect(10, Screen.height - 30, 150, 150), "Heat: " + jetCount.ToString () + " / " + jetLimit.ToString ());
-	}
+	#endregion
 }

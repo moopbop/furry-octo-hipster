@@ -1,8 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Base\Checkpoint.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Base\CameraController.cs">
     <Files>
-      <File FileName="Assets\Scripts\Base\Checkpoint.cs" Line="16" Column="58" />
+      <File FileName="Assets\Scripts\Base\PlayerController.cs" Line="99" Column="63" />
+      <File FileName="Assets\Scripts\Base\CameraController.cs" Line="25" Column="7" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
