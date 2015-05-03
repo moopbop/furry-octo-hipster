@@ -85,9 +85,7 @@ public class PlayerController : MonoBehaviour {
 		// Particles
 		if (Input.GetKey (KeyCode.Space)) {
 			for (int i = 0; i < jet_particles.Length; i++) {
-				if (jet_particles[i].isStopped) {
-					jet_particles[i].Play ();
-				}
+				jet_particles[i].Play ();
 			}
 		}
 	}
