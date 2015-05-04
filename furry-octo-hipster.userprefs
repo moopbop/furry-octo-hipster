@@ -1,10 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Base\PlayerController.cs">
     <Files>
-      <File FileName="Assets\Scripts\Base\PlayerController.cs" Line="64" Column="36" />
+      <File FileName="Assets\Scripts\Base\PlayerController.cs" Line="66" Column="31" />
       <File FileName="Assets\Scripts\Base\CameraController.cs" Line="31" Column="1" />
-      <File FileName="Assets\Scripts\Auxillary\WinScreenController.cs" Line="15" Column="38" />
+      <File FileName="Assets\Scripts\Auxillary\WinScreenController.cs" Line="15" Column="67" />
+      <File FileName="Assets\Scripts\Auxillary\Menu.cs" Line="14" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

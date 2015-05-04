@@ -12,7 +12,7 @@ public class WinScreenController : MonoBehaviour {
 			Application.Quit ();
 		}
 		if (Input.GetKeyDown (KeyCode.R)) {
-			Application.LoadLevel (returnScene);
+			Application.LoadLevel (PlayerPrefs.GetString ("Current_Level"));
 		}
 	}
 
