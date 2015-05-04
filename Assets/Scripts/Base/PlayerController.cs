@@ -25,6 +25,7 @@ public class PlayerController : MonoBehaviour {
 	public ParticleSystem[] jet_particles;	// Array of jetpack particles
 	public GameObject timer;
 	public float msSensitivity;				// Mouse sensitivity
+	public string nextScene;
 	#endregion
 
 	#region private variables
@@ -60,7 +61,7 @@ public class PlayerController : MonoBehaviour {
 		// Check for win and song over
 		if (endGame && !win.isPlaying) {
 			// Load end scene (index 1 as-of 4/26/2015)
-			Application.LoadLevel ("AlphaWin");
+			Application.LoadLevel (nextScene);
 		}
 		
 		// Grab input from all relevant axes
