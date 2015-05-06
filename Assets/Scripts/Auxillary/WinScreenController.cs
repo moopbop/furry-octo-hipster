@@ -14,6 +14,9 @@ public class WinScreenController : MonoBehaviour {
 		if (Input.GetKeyDown (KeyCode.R)) {
 			Application.LoadLevel (PlayerPrefs.GetString ("Current_Level"));
 		}
+		if (Input.GetKeyDown (KeyCode.M)) {
+			Application.LoadLevel ("MainMenu");
+		}
 	}
 
 	void Start() {
