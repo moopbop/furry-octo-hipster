@@ -4,8 +4,8 @@ using UnityEngine.UI;
 
 public class WinScreenController : MonoBehaviour {
 
-	public Text score;
-	public string returnScene;
+	public Text score;			// Score display
+	public string returnScene;	// Scene to return to if "R" pressed
 
 	void Update () {
 		if (Input.GetKeyDown (KeyCode.Escape)) {

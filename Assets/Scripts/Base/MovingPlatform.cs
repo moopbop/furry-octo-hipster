@@ -3,9 +3,9 @@ using System.Collections;
 
 public class MovingPlatform : MonoBehaviour {
 
-	public Transform target;
-	public float speed;
-	public Transform start;
+	public Transform target;	// Transform to move to
+	public float speed;			// Movement increment speed
+	public Transform start;		// Starting position
 	private bool direction;
 
 	void Start() {

@@ -19,24 +19,24 @@ public class PlayerController : MonoBehaviour {
 	public float maxAirSpeed;				// Y clamping value
 	public float jetLimit;					// Y accel limiter
 	public GameObject checkpointManager;	// Reference checkpoint controller
-	public AudioSource collect;
-	public AudioSource die;
-	public AudioSource win;
+	public AudioSource collect;				// Checkpoint collect sound
+	public AudioSource die;					// Death sound
+	public AudioSource win;					// Win sound
 	public ParticleSystem[] jet_particles;	// Array of jetpack particles
-	public GameObject timer;
+	public GameObject timer;				// Timer object
 	public float msSensitivity;				// Mouse sensitivity
 	#endregion
 
 	#region private variables
 	/* Private variables */
-	private Vector3 input;								// Input reading during Update()
-	private Vector3 startPosition;						// For easy resets
-	private Rigidbody rb;
-	private float jetCount;								// Y accel clamp
-	private CheckpointController checkControl;			// CheckpointController.cs script
-	private int checkCount;								// Checkpoint counter
-	private bool endGame;
-	private float mouseX;
+	private Vector3 input;						// Input reading during Update()
+	private Vector3 startPosition;				// For easy resets
+	private Rigidbody rb;						// This object's rigidbody
+	private float jetCount;						// Y accel clamp
+	private CheckpointController checkControl;	// CheckpointController.cs script
+	private int checkCount;						// Checkpoint counter
+	private bool endGame;						// Win condition check
+	private float mouseX;						// Input storage for mouse rotation
 	#endregion
 
 	#region system voids

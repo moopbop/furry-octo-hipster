@@ -3,8 +3,8 @@ using System.Collections;
 using System;
 
 public class Clock : MonoBehaviour {
-	DateTime time;
-	int seconds;
+	DateTime time;	// DateTime object for time storage
+	int seconds;	// Seconds passed
 
 	void Start() {
 		time = DateTime.Now;

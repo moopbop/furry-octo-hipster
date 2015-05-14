@@ -9,12 +9,12 @@ using System.Collections;
 public class CameraController : MonoBehaviour {
 
 	#region public variables
-	public Transform follow;
-	public float distance;
-	public float up;
-	public float maxUpAngle;
-	public float maxDownAngle;
-	public float msSensitivity;
+	public Transform follow;	// Transform to follow
+	public float distance;		// Distance behind target
+	public float up;			// Distance above target
+	public float maxUpAngle;	// Max pitch
+	public float maxDownAngle;	// Min pitch
+	public float msSensitivity;	// Mouse movement speed
 	#endregion
 
 	#region system voids

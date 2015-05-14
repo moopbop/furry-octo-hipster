@@ -1,11 +1,15 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Auxillary\Menu.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Base\CheckpointController.cs">
     <Files>
-      <File FileName="Assets\Scripts\Auxillary\WinScreenController.cs" Line="18" Column="39" />
-      <File FileName="Assets\Scripts\Base\MovingPlatform.cs" Line="42" Column="2" />
-      <File FileName="Assets\Scripts\Base\PlayerController.cs" Line="196" Column="1" />
-      <File FileName="Assets\Scripts\Auxillary\Menu.cs" Line="7" Column="19" />
+      <File FileName="Assets\Scripts\Base\PlayerController.cs" Line="176" Column="3" />
+      <File FileName="Assets\Scripts\Auxillary\WinScreenController.cs" Line="8" Column="65" />
+      <File FileName="Assets\Scripts\Base\Clock.cs" Line="7" Column="32" />
+      <File FileName="Assets\Scripts\Auxillary\Menu.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Base\Checkpoint.cs" Line="6" Column="51" />
+      <File FileName="Assets\Scripts\Base\CameraController.cs" Line="17" Column="53" />
+      <File FileName="Assets\Scripts\Base\MovingPlatform.cs" Line="5" Column="2" />
+      <File FileName="Assets\Scripts\Base\CheckpointController.cs" Line="22" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

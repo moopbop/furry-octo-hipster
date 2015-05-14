@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Checkpoint : MonoBehaviour {
 	
-	public bool destroyed;
+	public bool destroyed;	// Whether or not to exist
 
 	void Start() {
 		destroyed = false;
